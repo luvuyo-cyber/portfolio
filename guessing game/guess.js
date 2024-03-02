@@ -23,7 +23,7 @@ while (tries > 0) {
         alert("Incorrect guess. Number too low!");
         tries--;
     } else {
-        alert("Congratulations!\nYou guessed correctly.");
+        alert("Congratulations!\nYou guessed correctly.\nThe answer is: " + secret + "!");
         break;
     }
 }
