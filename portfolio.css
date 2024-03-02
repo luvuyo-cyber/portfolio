@@ -1,0 +1,27 @@
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 200px;
+    height: 200px;
+
+}
+
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+};
+
+p {
+    font-family: "Lucida Console", "Courier New", monospace;
+};
+
+/* Add a gray background color and some padding to the footer */
+footer {
+    background-color: #f2f2f2;
+    padding: 25px;
+}
