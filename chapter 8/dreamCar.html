@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>building dream car</title>
+    <style>
+        #car {
+            font-family: Arial;
+        }
+
+        #body {
+            position: absolute;
+            top: 50px;
+            width: 80%;
+            height: 100px;
+            background-color: #000000;
+            text-align: center;
+        }
+
+        #backwheel {
+            position: absolute;
+            left: 10%;
+            top: 130px;
+            background-color: #ffffff;
+            border: 3px solid black;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+        }
+
+        #frontwheel {
+            position: absolute;
+            left: 55%;
+            top: 130px;
+            background-color: #ffffff;
+            border: 3px solid black;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="car">
+        This <span id="modelyear"></span> dream car can be yours for
+        just: R<span id="pricetag"></span>
+        <div id="body">
+        </div>
+        <div id="frontwheel"></div>
+        <div id="backwheel"></div>
+    </div>
+
+    <script>
+
+        let dreamCar = {
+            make: "mercedes",
+            model: "s-series",
+            color: "pink",
+            year: 2023,
+            bodyStyle: "sports car",
+            price: 2000000
+        };
+
+
+        document.getElementById("pricetag").innerHTML = dreamCar.price;
+
+        document.getElementById("modelyear").innerHTML = dreamCar.year;
+
+        document.getElementById("body").style.backgroundColor = dreamCar.color;
+
+        document.getElementById("body").innerHTML = dreamCar.make + " " + dreamCar.model;
+
+        // alert("the type of dreamCar is: " + typeof dreamCar);
+    </script>
+</body>
+
+</html>
